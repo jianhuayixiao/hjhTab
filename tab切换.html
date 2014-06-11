@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>切换</title>
+    <style type="text/css">
+        body,ul{ margin: 0; }
+        ul{ padding: 0; }
+        li{ list-style: none outside; }
+        .wp4-con{ position: relative; overflow: hidden; }
+        .wp4-con ul{ overflow: hidden; zoom: 1; position: relative; }
+        .wp4-con ul li{ position: absolute; top: 0; left: 0; display: none; }
+        .wp4-con ul li.cur{ display: block; }
+        .wp4-con ul li img{ display: block; border: none; }
+        .wp4-con a.l,.wp4-con a.r{ position: absolute; width: 37px; height: 37px; top: 50%; cursor: pointer; }
+        .wp4-con a.l{ left: 15px; background: url("img/l.png") no-repeat; }
+        .wp4-con a.r{ right: 15px; background: url("img/r.png") no-repeat; }
+
+        .wp5-con{ position: relative; overflow: hidden; }
+        .wp5-con ul{ overflow: hidden; zoom: 1; position: relative; }
+        .wp5-con ul li{ position: absolute; top: 0; left: 0; display: none; }
+        .wp5-con ul li.cur{ display: block; }
+        .wp5-con ul li img{ display: block; border: none; width: 490px; }
+        .wp5-con a.l,.wp5-con a.r{ position: absolute; width: 37px; height: 37px; top: 50%; cursor: pointer; }
+        .wp5-con a.l{ left: 15px; background: url("img/l.png") no-repeat; }
+        .wp5-con a.r{ right: 15px; background: url("img/r.png") no-repeat; }
+
+
+
+    </style>
+</head>
+<body>
+<div class="wp4-con">
+    <ul>
+        <li class="cur"><img src="img/img8.jpg" alt="" /></li>
+        <li><img src="img/img8-1.jpg" alt="" /></li>
+        <li><img src="img/img8.jpg" alt="" /></li>
+    </ul>
+    <a class="l" href=""></a>
+    <a class="r" href=""></a>
+</div>
+
+<div class="wp5-con">
+    <ul>
+        <li class="cur"><img src="img/img8.jpg" alt="" /></li>
+        <li><img src="img/img8-1.jpg" alt="" /></li>
+        <li><img src="img/img8.jpg" alt="" /></li>
+    </ul>
+    <a class="l" href=""></a>
+    <a class="r" href=""></a>
+</div>
+
+    <script type="text/javascript" src="jquery 1.9.0.js"></script>
+    <script type="text/javascript" src="hjhTab-1.0.js"></script>
+    <script type="text/javascript">
+
+    $(function(){
+
+
+        $(".wp4-con").hjhTab({
+            width: 980,
+            height: 340
+        });
+
+        $(".wp5-con").hjhTab({
+            width: 490,
+            height: 170
+        });
+
+    });
+
+    </script>
+</body>
+</html>
